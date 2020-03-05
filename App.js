@@ -8,28 +8,17 @@ import { TouchableHighlight } from 'react-native-gesture-handler';
 function Menu({ navigation }) {
   return (
     <View style={menu.View}>
-      <TouchableHighlight style={menu.botao} onPress={() => navigation.navigate('Segunda')}>
-      <Text>Segunda</Text>
-      </TouchableHighlight>
-      <View style={menu.vazio}></View>
-      <TouchableHighlight style={menu.botao} onPress={() => navigation.navigate('Terca')}>
-          <Text>Terca</Text>
-      </TouchableHighlight>
+      <Button onPress={() => navigation.navigate('Segunda')}/>
       
-      <TouchableHighlight style={menu.botao} onPress={() => navigation.navigate('Quarta')}>
-        <Text>Quarta</Text>
-      </TouchableHighlight>
+      <Button onPress={() => navigation.navigate('Terca')}/>
+
+      <Button onPress={() => navigation.navigate('Quarta')}/>
       
-      <TouchableHighlight style={menu.botao} onPress={() => navigation.navigate('Quinta')} >
-        <View>
-        <Text>Quinta</Text>
-        </View>
-      </TouchableHighlight>
+      <Button onPress={() => navigation.navigate('Quinta')} />
       
-      <ButTouchableHighlightton style={menu.botao} onPress={() => navigation.navigate('Sexta')} >
-        <Text>Sexta</Text>
-      </ButTouchableHighlightton>
-    </View>
+      <Button style={menu.botao} onPress={() => navigation.navigate('Sexta')} />
+
+      </View>
   );
 }
 function Segunda(){
@@ -96,9 +85,6 @@ var menu = StyleSheet.create({
   },
   botao:{
     backgroundColor:'skyblue',
-    padding: '50%',
-    borderColor:'black',
-    borderWidth:2,
   }
   
 });
