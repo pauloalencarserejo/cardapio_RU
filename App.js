@@ -2,21 +2,21 @@ import * as React from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableHighlight } from 'react-native-gesture-handler';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 function Menu({ navigation }) {
   return (
     <View style={menu.View}>
-      <Button onPress={() => navigation.navigate('Segunda')}/>
+      <Button  title='Segunda' onPress={() => navigation.navigate('Segunda')}/>
       
-      <Button onPress={() => navigation.navigate('Terca')}/>
+      <Button title='Terca' onPress={() => navigation.navigate('Terca')}/>
 
-      <Button onPress={() => navigation.navigate('Quarta')}/>
+      <Button title='Quarta' onPress={() => navigation.navigate('Quarta')}/>
       
-      <Button onPress={() => navigation.navigate('Quinta')} />
+      <Button title='Quinta' onPress={() => navigation.navigate('Quinta')} />
       
-      <Button style={menu.botao} onPress={() => navigation.navigate('Sexta')} />
+      <Button title='Sexta' style={menu.botao} onPress={() => navigation.navigate('Sexta')} />
 
       </View>
   );
@@ -51,26 +51,27 @@ function Sexta(){
     <Text>Sexta</Text>
   </View>) ;
 }
+const Tab = createBottomTabNavigator();
 
-const Stack = createStackNavigator();
-
-function App() {
-  const ref = React.useRef(null);
+function MyTabs() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Menu">
-        <Stack.Screen name="Menu" component={Menu} />
-        <Stack.Screen name="Segunda" component={Segunda} />
-        <Stack.Screen name="Terca" component={Terca} />
-        <Stack.Screen name="Quarta" component={Quarta} />
-        <Stack.Screen name="Quinta" component={Quinta} />
-        <Stack.Screen name="Sexta" component={Sexta} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name="Seg" component={Segunda} />
+      <Tab.Screen name="Ter" component={Terca} />
+      <Tab.Screen name="Qua" component={Quarta} />
+      <Tab.Screen name="Qui" component={Quinta} />
+      <Tab.Screen name="Sex" component={Sexta} />
+    </Tab.Navigator>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+  );
+  }
 
 var menu = StyleSheet.create({
   View:{
