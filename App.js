@@ -24,7 +24,7 @@ function Menu({ navigation }) {
 function Segunda(){
   return (
     <ImageBackground source={require('./assets/img/papel.jpg')} style={styles.backgroundImage}>
-      <View>
+      <View style={styles.container}>
         <Text>Segunda</Text>
         <Text>Almoço</Text>
         <Text>Principal</Text>
@@ -64,7 +64,7 @@ function Segunda(){
 function Terca(){
   return (
     <ImageBackground source={require('./assets/img/papel2.jpg')} style={styles.backgroundImage}>
-      <View>
+      <View style={styles.container}>
         <Text>Terca</Text>
         <Text>Almoço</Text>
         <Text>Principal</Text>
@@ -104,7 +104,7 @@ function Terca(){
 function Quarta(){
   return (
     <ImageBackground source={require('./assets/img/papel3.jpg')} style={styles.backgroundImage}>
-      <View>
+      <View style={styles.container}>
         <Text>Quarta</Text>
         <Text>Almoço</Text>
         <Text>Principal</Text>
@@ -144,7 +144,7 @@ function Quarta(){
 function Quinta(){
   return (
     <ImageBackground source={require('./assets/img/papel4.jpg')} style={styles.backgroundImage}>
-      <View>
+      <View style={styles.container}>
         <Text>Quinta</Text>
         <Text>Almoço</Text>
         <Text>Principal</Text>
@@ -184,7 +184,7 @@ function Quinta(){
 function Sexta(){
   return (
     <ImageBackground source={require('./assets/img/papel5.jpg')} style={styles.backgroundImage}>
-      <View>
+      <View style={styles.container}>
         <Text style={tex.bigBlue}>Sexta</Text>
         <Text style={tex.white}>Almoço</Text>
         <Text>Principal</Text>
@@ -300,4 +300,11 @@ var styles = StyleSheet.create({
     width: '100%',
     height: '100%',  
   },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#FFFFFF',
+    margin: 25,
+  }
 });
