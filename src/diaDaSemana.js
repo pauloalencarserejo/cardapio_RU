@@ -4,14 +4,14 @@ import { View, Text, StyleSheet, ImageBackground,ScrollView  } from 'react-nativ
 export default function diaDaSemana(props) {
 
     return (
-        <ImageBackground source={require('./../assets/img/fundo6.jpg')} style={styles.backgroundImage}  >
+        <ImageBackground source={require('./../assets/img/fundo3.jpg')} style={styles.backgroundImage}  >
             <View >
                 <ScrollView>
-                <View>
-                    <Text>Segunda</Text>
-                    <View>
+                <View style={styles.container}>
+                    <Text>{props.diaSemana}</Text>
+                    <View style={styles.alinhar}>
                         <Text>Almoço</Text>
-                        <View>
+                        <View style={styles.alinhar}>
                             <Text>Principal</Text>
                             <Text>{props.almocoPrincipal}</Text>
                             <Text>Vegetariano</Text>
@@ -28,9 +28,9 @@ export default function diaDaSemana(props) {
                             <Text>{props.almocoSobremesa}</Text>
                         </View>
                     </View>
-                    <View>
+                    <View style={styles.alinhar}>
                         <Text>Jantar</Text>
-                        <View>
+                        <View style={styles.alinhar}>
                         <Text>Principal</Text>
                             <Text>{props.jantaPrincipal}</Text>
                             <Text>Vegetariano</Text>
@@ -64,5 +64,17 @@ var styles = StyleSheet.create({
       position: 'absolute',
       width: '100%',
       height: '100%',  
+    },
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#FFFFFF',
+      margin: 25,
+    },
+    alinhar: {
+        alignContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
   });
