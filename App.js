@@ -1,104 +1,54 @@
 import * as React from 'react';
-import { Button, View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+//import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { render } from 'react-dom';
+//import { render } from 'react-dom';
+import DiaDaSemana from './src/diaDaSemana'
+import diaDaSemana from './src/diaDaSemana';
 
-
-function Menu({ navigation }) {
-  return (
-    <View style={menu.View}>
-      <Button title='Segunda' style={menu.botao}onPress={() => navigation.navigate('Segunda')}/>
-      
-      <Button title='Terça' style={menu.botao} onPress={() => navigation.navigate('Terca')}/>
-
-      <Button title='Quarta' style={menu.botao} onPress={() => navigation.navigate('Quarta')}/>
-      
-      <Button title='Quinta' style={menu.botao} onPress={() => navigation.navigate('Quinta')} />
-      
-      <Button title='Sexta' style={menu.botao} onPress={() => navigation.navigate('Sexta')} />
-    </View>
-  );
-}
 function Segunda(){
   return (
-    <ImageBackground source={require('./assets/img/papel.jpg')} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Text>Segunda</Text>
-        <Text>Almoço</Text>
-        <Text>Principal</Text>
-        <Text>Assado de Panela Cubos de Frango ao Molho</Text>
-        <Text>Vegetariano</Text>
-        <Text>Fricassê de Grão de Bico</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, Beterraba, Tomate e Abacaxi</Text>
-        <Text>Guarnição</Text>
-        <Text>Cuscuz</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Cajá</Text>
-        <Text>Sobremesa</Text>
-        <Text>Doce</Text>
-
-        <Text>Jantar</Text>
-        <Text>Principal</Text>
-        <Text>Carne Trinchada  Filé de Frango Grelhado</Text>
-        <Text>Vegetariano</Text>
-        <Text>Almôngedas de Soja</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, Alface, Cenoura, Pepino e Milho</Text>
-        <Text>Guarnição</Text>
-        <Text>Macarrão Espaguete</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Manga</Text>
-        <Text>Sobremesa</Text>
-        <Text>Laranja Doce</Text>
-      </View>
-    </ImageBackground>
+    <DiaDaSemana 
+      diaSemana='Segunda'
+      almocoPrincipal='Assado de Panela Cubos de Frango ao Molho'
+      almocoVegetariano='Fricassê de Grão de Bico'
+      almocoSalada='Acelga, Beterraba, Tomate e Abacaxi'
+      almocoGuarnicao='Cuscuz'
+      almocoAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+      almocoSuco='Cajá'
+      almocoSobremesa='Doce'
+      
+      jantaPrincipal='Carne Trinchada  Filé de Frango Grelhado'
+      jantaVegetariano='Almôngedas de Soja'
+      jantaSalada='Acelga, Alface, Cenoura, Pepino e Milho'
+      jantaGuarnicao='Macarrão Espaguete'
+      jantaAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+      jantaSuco='Manga'
+      jantaSobremesa='Laranja Doce'
+    />
   ) ;
 }
 function Terca(){
   return (
-    <ImageBackground source={require('./assets/img/papel2.jpg')} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Text>Terca</Text>
-        <Text>Almoço</Text>
-        <Text>Principal</Text>
-        <Text>Paçoca de Carne  Filé de Frango Dourado</Text>
-        <Text>Vegetariano</Text>
-        <Text>Torta de Vegetais</Text>
-        <Text>Salada</Text>
-        <Text>Alface, R. Branco, Tomate e Maçã</Text>
-        <Text>Guarnição</Text>
-        <Text>Purê</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Baião Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Manga</Text>
-        <Text>Sobremesa</Text>
-        <Text>Banana Doce</Text>
-
-        <Text>Jantar</Text>
-        <Text>Principal</Text>
-        <Text>Cubos Suíno na Chapa   Frango Crocante</Text>
-        <Text>Vegetariano</Text>
-        <Text>Bife de Lentilha ao M. Tomate</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, Repolho Branco, Beterraba e Cenoura</Text>
-        <Text>Guarnição</Text>
-        <Text>Macarrão Parafuso</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz com Cenoura Arroz Integral Feijão Carioca</Text>
-        <Text>Suco</Text>
-        <Text>Acerola</Text>
-        <Text>Sobremesa</Text>
-        <Text>Maçã Doce</Text>
-      </View>
-    </ImageBackground>
+    <diaDaSemana
+      diaSemana='terça'
+      almocoPrincipal='Paçoca de Carne  Filé de Frango Dourado'
+      almocoVegetariano='Torta de Vegetais'
+      almocoSalada='Alface, R. Branco, Tomate e Maçã'
+      almocoGuarnicao='Purê'
+      almocoAcompanhamento='Baião Arroz Integral Feijão de Corda'
+      almocoSuco='Manga'
+      almocoSobremesa='Banana Doce'
+    
+      jantaPrincipal='Cubos Suíno na Chapa   Frango Crocante'
+      jantaVegetariano='Bife de Lentilha ao M. Tomate'
+      jantaSalada='Acelga, Repolho Branco, Beterraba e Cenoura'
+      jantaGuarnicao='Macarrão Parafuso'
+      jantaAcompanhamento='Arroz com Cenoura Arroz Integral Feijão Carioca'
+      jantaSuco='Acerola'
+      jantaSobremesa='Maçã Doce'
+    />
   ) ;
 }
 function Quarta(){
@@ -248,16 +198,13 @@ export default function App() {
 }
 var tex = StyleSheet.create({
   bigBlue: {
-    fontFamily: 'Jovanny Lemonad',
     color: 'blue',
     fontWeight: 'bold',
     fontSize: 30,
     textAlign: 'center'
   },
   white: {
-    fontFamily: 'Jovanny Lemonad',
     color: '#FFFFFF',
-    fontWeight: 'Bold',
     
   },
 });
@@ -292,7 +239,7 @@ var menuInferior = StyleSheet.create({
 
 var styles = StyleSheet.create({
   backgroundImage: {
-    resizeMode: 'none',
+    resizeMode: 'center',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
