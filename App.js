@@ -31,8 +31,8 @@ function Segunda(){
 }
 function Terca(){
   return (
-    <diaDaSemana
-      diaSemana='terça'
+    <DiaDaSemana
+      diaSemana='Terça'
       almocoPrincipal='Paçoca de Carne  Filé de Frango Dourado'
       almocoVegetariano='Torta de Vegetais'
       almocoSalada='Alface, R. Branco, Tomate e Maçã'
@@ -53,122 +53,68 @@ function Terca(){
 }
 function Quarta(){
   return (
-    <ImageBackground source={require('./assets/img/papel3.jpg')} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Text>Quarta</Text>
-        <Text>Almoço</Text>
-        <Text>Principal</Text>
-        <Text>Feijoada Filé de Frango Grelhado</Text>
-        <Text>Vegetariano</Text>
-        <Text>Omelete de Legumes</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, R. Roxo, Tomate e Passas</Text>
-        <Text>Guarnição</Text>
-        <Text>Farofa</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Acerola</Text>
-        <Text>Sobremesa</Text>
-        <Text>Laranja Doce</Text>
+    <DiaDaSemana
+      diaSemana='Quarta'
+      almocoPrincipal='Feijoada Filé de Frango Grelhado'
+      almocoVegetariano='Omelete de Legumes'
+      almocoSalada='Acelga, R. Roxo, Tomate e Passas'
+      almocoGuarnicao='Farofa'
+      almocoAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+      almocoSuco='Acerola'
+      almocoSobremesa='Laranja Doce'
     
-        <Text>Jantar</Text>
-        <Text>Principal</Text>
-        <Text>Bife ao Molho Frango Xadrez</Text>
-        <Text>Vegetariano</Text>
-        <Text>Lasanha de Brócolis</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, R. Roxo, e Tomate</Text>
-        <Text>Guarnição</Text>
-        <Text>Cuscuz</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Goiaba</Text>
-        <Text>Sobremesa</Text>
-        <Text>Abacaxi Doce</Text>
-      </View>
-    </ImageBackground>
+      jantaPrincipal='Bife ao Molho Frango Xadrez'
+      jantaVegetariano='Lasanha de Brócolis'
+      jantaSalada='Acelga, R. Roxo, e Tomate'
+      jantaGuarnicao='Cuscuz'
+      jantaAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+      jantaSuco='Goiaba'
+      jantaSobremesa='Abacaxi Doce'
+    />
     ) ;
 }
 function Quinta(){
   return (
-    <ImageBackground source={require('./assets/img/papel4.jpg')} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Text>Quinta</Text>
-        <Text>Almoço</Text>
-        <Text>Principal</Text>
-        <Text>Cozido Bovino Filé de Frango ao Molho de Calabresa</Text>
-        <Text>Vegetariano</Text>
-        <Text>Jardineira de Lentilha</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, R. Branco, Alface e Melão</Text>
-        <Text>Guarnição</Text>
-        <Text>Macarrão Espaguete</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão Carioca</Text>
-        <Text>Suco</Text>
-        <Text>Goiaba</Text>
-        <Text>Sobremesa</Text>
-        <Text>Maçã Doce</Text>
+    <DiaDaSemana
+      diaSemana='Quinta'
+      almocoPrincipal='Cozido Bovino Filé de Frango ao Molho de Calabresa'
+      almocoVegetariano='Jardineira de Lentilha'
+      almocoSalada='Acelga, R. Branco, Alface e Melão'
+      almocoGuarnicao='Macarrão Espaguete'
+      almocoAcompanhamento='Arroz Branco Arroz Integral Feijão Carioca'
+      almocoSuco='Goiaba'
+      almocoSobremesa='Maçã Doce'
     
-        <Text>Jantar</Text>
-        <Text>Principal</Text>
-        <Text>Picadinho de Carne Canja</Text>
-        <Text>Vegetariano</Text>
-        <Text>Escondidinho de Soja</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, R. Branco, Beterraba, Pepino e Ervilha</Text>
-        <Text>Guarnição</Text>
-        <Text>Macarrão Parafuso</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Maracujá</Text>
-        <Text>Sobremesa</Text>
-        <Text>Tangerina Doce</Text>
-      </View>
-    </ImageBackground>
+      jantaPrincipal='Picadinho de Carne Canja'
+      jantaVegetariano='Escondidinho de Soja'
+      jantaSalada='Acelga, R. Branco, Beterraba, Pepino e Ervilha'
+      jantaGuarnicao='Macarrão Parafuso'
+      jantaAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+      jantaSuco='Maracujá'
+      jantaSobremesa='Tangerina Doce'
+    />  
   ) ;
 }
 function Sexta(){
   return (
-    <ImageBackground source={require('./assets/img/papel5.jpg')} style={styles.backgroundImage}>
-      <View style={styles.container}>
-        <Text style={tex.bigBlue}>Sexta</Text>
-        <Text style={tex.white}>Almoço</Text>
-        <Text>Principal</Text>
-        <Text>Bife na Manteiga Filé de Frango ao Molho</Text>
-        <Text>Vegetariano</Text>
-        <Text>Yakissoba Vegetariano Ervil</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, Beterraba, R. Branco e Tomate</Text>
-        <Text>Guarnição</Text>
-        <Text>Cuscuz</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão de Corda</Text>
-        <Text>Suco</Text>
-        <Text>Maracujá</Text>
-        <Text>Sobremesa</Text>
-        <Text>Melancia Doce</Text>
-    
-        <Text>Jantar</Text>
-        <Text>Principal</Text>
-        <Text>Bife ao Molho de Tomate Panqueca de Frango</Text>
-        <Text>Vegetariano</Text>
-        <Text>Jardineira de Ervilha</Text>
-        <Text>Salada</Text>
-        <Text>Acelga, Cenoura, R. Roxo e Manga</Text>
-        <Text>Guarnição</Text>
-        <Text>Farofa</Text>
-        <Text>Acompanhamentos</Text>
-        <Text>Arroz Branco Arroz Integral Feijão Carioca</Text>
-        <Text>Suco</Text>
-        <Text>Cajá</Text>
-        <Text>Sobremesa</Text>
-        <Text>Melão Japonês Doce</Text>
-      </View>
-    </ImageBackground>
+    <DiaDaSemana
+    diaSemana='Sexta'
+    almocoPrincipal='Bife na Manteiga Filé de Frango ao Molho'
+    almocoVegetariano='Yakissoba Vegetariano Ervil'
+    almocoSalada='Acelga, Beterraba, R. Branco e Tomate'
+    almocoGuarnicao='Cuscuz'
+    almocoAcompanhamento='Arroz Branco Arroz Integral Feijão de Corda'
+    almocoSuco='Maracujá'
+    almocoSobremesa='Melancia Doce'
+  
+    jantaPrincipal='Bife ao Molho de Tomate Panqueca de Frango'
+    jantaVegetariano='Jardineira de Ervilha'
+    jantaSalada='Acelga, Cenoura, R. Roxo e Mangaa'
+    jantaGuarnicao='Farofa'
+    jantaAcompanhamento='Arroz Branco Arroz Integral Feijão Carioca'
+    jantaSuco='Cajá'
+    jantaSobremesa='Melão Japonês Doce'
+  />    
   ) ;
 }
 const Tab = createBottomTabNavigator();

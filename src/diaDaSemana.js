@@ -7,7 +7,7 @@ export default function diaDaSemana(props) {
         <ImageBackground source={require('./../assets/img/fundo6.jpg')} style={styles.backgroundImage}  >
             <ScrollView style={styles.conteiner}>
                 <View style={styles.coluna}>
-                    <Text style={styles.diaDaSemana}>Segunda</Text>
+    <Text style={styles.diaDaSemana}>{props.diaSemana}</Text>
                     <View >
                         <View>
                         <Text>Almoço</Text>
